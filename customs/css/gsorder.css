@@ -1,0 +1,44 @@
+  body {  
+          font-family: 'Prompt';
+          font-weight: 300;
+          overflow-x: hidden;
+          overflow-y: auto; 
+          font-size: 12px;
+    }
+
+    .main-header .logo {
+      font-family: 'Prompt';
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      font-family: 'Prompt';
+    }
+
+    .main-footer {
+      font-size: 12px;
+    }
+
+    .table-main-form { 
+      border-collapse:separate; 
+      border-spacing: 0 0.5em;
+    }
+
+
+.treeview-menu > li > a {
+  font-size: 12px;
+}
+
+
+
+
