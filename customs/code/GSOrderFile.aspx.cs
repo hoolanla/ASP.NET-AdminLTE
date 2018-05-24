@@ -26,8 +26,6 @@ public partial class customs_code_GSOrderFile : System.Web.UI.Page
         StringBuilder html = new StringBuilder();
 
 
-
-
         html.Append("<Table width=80% class='table table-hover'>");
         html.Append("<THEAD><TR>");
         html.Append("<th>No.</th>");

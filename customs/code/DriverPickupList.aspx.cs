@@ -35,4 +35,11 @@ public partial class customs_code_DriverPickupList : System.Web.UI.Page
         }
 
     }
+
+    protected void RadGrid1_PreRender(object sender, EventArgs e)
+    {
+
+
+        RadGrid1.MasterTableView.GetColumn("RDCPlaningID").Visible = false;
+    }
 }

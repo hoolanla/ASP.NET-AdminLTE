@@ -45,7 +45,7 @@ function cancelClicking(sender, args) {
     <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="false" />
 
           <telerik:RadGrid ID="RadGrid1" runat="server"  AllowPaging="True" AllowFilteringByColumn="False" AllowSorting="True"
-           OnItemDataBound="RadGrid1_ItemDataBound">
+           OnItemDataBound="RadGrid1_ItemDataBound" OnPreRender="RadGrid1_PreRender">
 
              <MasterTableView AutoGenerateColumns="False" TableLayout="Fixed">
                      <PagerStyle PageSizes="5,10" PagerTextFormat="{4}<strong>{5}</strong> cars matching your search criteria"
@@ -60,6 +60,14 @@ function cancelClicking(sender, args) {
         </ItemTemplate>
         <HeaderStyle Width="30px" />
       </telerik:GridTemplateColumn>
+
+
+
+                     
+                             <telerik:GridBoundColumn DataField="RDCPlaningID" HeaderText="Planning ID" UniqueName="RDCPlaningID"
+                                 >
+                                <HeaderStyle Width="115px" />
+                            </telerik:GridBoundColumn>
   
                              <telerik:GridBoundColumn DataField="RDCPlanningNo" HeaderText="Planning No" UniqueName="RDCPlanningNo"
                                  >
@@ -113,8 +121,12 @@ function cancelClicking(sender, args) {
                                 AllowFiltering="false">
                                 <HeaderStyle Width="102px" />
                                 <ItemTemplate>
-                                    <asp:LinkButton ID="BookButton" runat="server" Text="DETAIL" OnClientClick='<%# String.Format("openConfirmationWindow({0}); return false;", Eval("ID")) %>'
-                                        CssClass="bookNowLink" />
+                                    <%--<asp:LinkButton ID="BookButton" runat="server" Text="DETAIL" OnClientClick='<%# String.Format("openConfirmationWindow({0}); return false;", Eval("ID")) %>'
+                                        CssClass="bookNowLink" />--%>
+
+   <asp:LinkButton ID="LinkButton1" runat="server" Text="DETAIL" href=<%# String.Format("DriverPickupDetail.aspx?ID={0}", Eval("RDCPlanningID")) %> ></asp:LinkButton>
+
+
                                 </ItemTemplate>
                         </telerik:GridTemplateColumn>
                  </Columns>
