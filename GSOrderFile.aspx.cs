@@ -18,8 +18,12 @@ public partial class customs_code_GSOrderFile : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
-         GSOrderID = Request.QueryString["id"];
+        GSOrderID = Request.QueryString["id"];
          GSOrderNO = Request.QueryString["no"];
         dtTop = GetDataTop(GSOrderID);
 

@@ -11,6 +11,10 @@ public partial class customs_code_GSOrderFileUpload : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
         String gsorderid = null, gsorderno = null;
         HttpPostedFile postedFile = Request.Files["fUpload"];

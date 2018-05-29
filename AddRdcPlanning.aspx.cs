@@ -13,7 +13,11 @@ public partial class customs_code_AddRdcPlanning : System.Web.UI.Page
     DataTable DT_GSOrderNo;
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
 
+            Response.Redirect("Authorize.aspx");
+        }
 
         DT_GSOrderNo = GetGSOrderNo();
         StringBuilder html = new StringBuilder();

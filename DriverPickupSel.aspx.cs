@@ -15,6 +15,12 @@ public partial class customs_code_DriverPickupSel : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
+
+
         string broadcastSelect = Request.Form["checkId[]"];
 
         dtTop = GetDataTop(broadcastSelect);

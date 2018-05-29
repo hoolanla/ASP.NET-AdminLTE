@@ -13,6 +13,10 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
     DataTable dtTop, dtBottom;
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
         String ID = Request.QueryString["ID"];
 

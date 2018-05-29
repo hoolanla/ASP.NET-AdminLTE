@@ -11,6 +11,10 @@ public partial class customs_code_SubContract : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
         DataTable dt;
         BLL.SubContract _Bll = new BLL.SubContract();

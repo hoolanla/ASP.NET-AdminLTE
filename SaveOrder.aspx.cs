@@ -16,6 +16,12 @@ public partial class customs_code_SaveOrder : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
+
+
         m_SaveOrder.Index = Request.Form["txtIndex"];
         m_SaveOrder.uid = "4";
         m_SaveOrder.CustId = Request.Form["selCust"];

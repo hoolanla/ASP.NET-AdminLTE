@@ -14,6 +14,10 @@ public partial class customs_code_GSOrderPickup : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
         String GSOrderID = Request.QueryString["id"];
         String GSOrderNO = Request.QueryString["no"];

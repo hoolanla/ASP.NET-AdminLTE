@@ -10,6 +10,13 @@ public partial class customs_code_OpenRTNFile : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
+
+
         string filePath = null;
         HttpPostedFile postedFile = Request.Files["rtnFile"];
 

@@ -14,6 +14,11 @@ public partial class customs_code_RDCReceiveDetail : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
+
         String ID = Request.QueryString["ID"];
         dtTop = GetDataTop(ID);
         dtBottom = GetDataBottom(ID);

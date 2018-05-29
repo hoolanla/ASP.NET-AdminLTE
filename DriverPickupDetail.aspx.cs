@@ -15,6 +15,13 @@ public partial class customs_code_DriverPickupDetail : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
+
+
         dtTop = GetDataTop(22);
         dtBottom = GetDataBottom(22);
         StringBuilder html = new StringBuilder();

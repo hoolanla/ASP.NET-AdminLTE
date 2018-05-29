@@ -11,6 +11,10 @@ public partial class customs_code_Truck : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["USER"] == null)
+        {
+            Response.Redirect("Authorize.aspx");
+        }
 
         DataTable dt;
         BLL.Truck _Bll = new BLL.Truck();
