@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Spire.Barcode;
+using System.Drawing;
 
 public partial class customs_code_SaveOrder : System.Web.UI.Page
 {
@@ -16,10 +18,10 @@ public partial class customs_code_SaveOrder : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["USER"] == null)
-        {
-            Response.Redirect("Authorize.aspx");
-        }
+        //if (Session["USER"] == null)
+        //{
+        //    Response.Redirect("Authorize.aspx");
+        //}
 
 
         m_SaveOrder.Index = Request.Form["txtIndex"];
@@ -79,34 +81,73 @@ public partial class customs_code_SaveOrder : System.Web.UI.Page
         if(_BLL.InsertGSOrder_Header(m_SaveOrder))
         {
             //Update RNO
-            _BLL.Update_RNO(m_SaveOrder);
+            _BLL.Update_RNO(m_SaveOrder,rwGSNO);
         }
 
 
         //Get GSOrderId
         string gsOrderID = _BLL.getGSOrderID(m_SaveOrder);
 
-        for (int i = 1; i == int.Parse(m_SaveOrder.Index);i++)
+        for (int i = 1; i <= int.Parse(m_SaveOrder.Index);i++)
         {
             		String ProductId = Request.Form["selOrder" + i];
-            MODEL.ProductInfo m_mod_ProductInfo = new MODEL.ProductInfo();
-            DataTable dt;
-            dt = _BLL.getProductInfo(ProductId);
+            String description = Request.Form["txtlbl" + i];
 
-            if (dt.Rows.Count > 0)
-            {
-                m_mod_ProductInfo.ProductName = dt.Rows[0]["ProductName"].ToString();
-                m_mod_ProductInfo.Weight = dt.Rows[0]["Weight"].ToString();
-                m_mod_ProductInfo.Volumn = dt.Rows[0]["Volumn"].ToString();
-                m_mod_ProductInfo.Price = dt.Rows[0]["Price"].ToString();
-                m_mod_ProductInfo.UOM = dt.Rows[0]["UOM"].ToString();
-            }
+            //MODEL.ProductInfo m_mod_ProductInfo = new MODEL.ProductInfo();
+            //DataTable dt;
+            //dt = _BLL.getProductInfo(ProductId);
+
+            //if (dt.Rows.Count > 0)
+            //{
+            //    m_mod_ProductInfo.ProductName = dt.Rows[0]["ProductName"].ToString();
+            //    m_mod_ProductInfo.Weight = dt.Rows[0]["Weight"].ToString();
+            //    m_mod_ProductInfo.Volumn = dt.Rows[0]["Volumn"].ToString();
+            //    m_mod_ProductInfo.Price = dt.Rows[0]["Price"].ToString();
+            //    m_mod_ProductInfo.UOM = dt.Rows[0]["UOM"].ToString();
+            //}
+
+            // INsert GSOrder Detail
+            string rwCode = _BLL.getTransBillNo(m_SaveOrder);
+            string RunningNo = genRunningNoTransBill(m_SaveOrder);
+            String TransBillNo = rwCode + "-" + RunningNo;
+            _BLL.InsertGSOrder_Detail(m_SaveOrder, TransBillNo, ProductId, gsOrderID, description);
+            genBarcode(TransBillNo);
+
         }
+
+        Response.Redirect("gsorderDetail.aspx?id=" + gsOrderID);
 
     }
 
+    private bool genBarcode(string TransBillNo)
+    {
+
+        var setting = new BarcodeSettings()
+        {
+            Data = TransBillNo,
+            Type = BarCodeType.Code128,
+            Unit = System.Drawing.GraphicsUnit.Millimeter,
+            ShowTextOnBottom = true,
+            TextFont = new System.Drawing.Font("Arial", 10)
+        };
+
+        var generator = new BarCodeGenerator(setting);
+        System.Drawing.Image img;
+        img = generator.GenerateImage();
+        img.Save(Server.MapPath("~/Barcode/" + TransBillNo + ".jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+
+        return true;
+    }
 
 
+    private string genRunningNoTransBill(MODEL.SaveOrder criteria)
+    {
+        int tmp = Int32.Parse(_BLL.getRNNoTransbill(criteria));
+        String RunningNo = tmp.ToString("D6");
+
+        _BLL.Update_RNO_TransBill(criteria, tmp + 1);
+        return RunningNo;
+    }
 
 
     private string genGSOrderNo(string GSNo)

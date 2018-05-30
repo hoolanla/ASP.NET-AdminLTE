@@ -107,8 +107,10 @@ function cancelClicking(sender, args) {
                                 AllowFiltering="false">
                                 <HeaderStyle Width="102px" />
                                 <ItemTemplate>
-                                    <asp:LinkButton ID="BookButton" runat="server" Text="DETAIL" OnClientClick='<%# String.Format("openConfirmationWindow({0}); return false;", Eval("ID")) %>'
-                                        CssClass="bookNowLink" />
+   <%--                                 <asp:LinkButton ID="BookButton" runat="server" Text="DETAIL" OnClientClick='<%# String.Format("openConfirmationWindow({0}); return false;", Eval("ID")) %>'--%>
+                                  <%--      CssClass="bookNowLink" />--%>
+
+                                               <asp:LinkButton ID="LinkButton1" runat="server" Text="DETAIL" href=<%# String.Format("RDCPlanningDetail.aspx?ID={0}", Eval("ID")) %> ></asp:LinkButton>
                                 </ItemTemplate>
                         </telerik:GridTemplateColumn>
 

@@ -198,10 +198,10 @@ test('Navigating prev/next in decade view', function(){
     datesEqual(this.dp.viewDate, UTCDate(2022, 2, 31));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
 
-    // Go to prev year (x2 == 2000-09)
+    // Go to prev year (x2 == 3500-09)
     target = this.picker.find('.datepicker-years thead th.prev');
     target.click().click();
-    equal(this.picker.find('.datepicker-years thead th.datepicker-switch').text(), '2000-2009');
+    equal(this.picker.find('.datepicker-years thead th.datepicker-switch').text(), '3500-2009');
     // Only viewDate modified
     datesEqual(this.dp.viewDate, UTCDate(2002, 2, 31));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));

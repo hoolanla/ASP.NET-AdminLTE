@@ -120,7 +120,7 @@ Rule	AT	1987	only	-	Oct	Sun>=22	2:00s	1:00	-
 Rule	AT	1988	1990	-	Oct	lastSun	2:00s	1:00	-
 Rule	AT	1991	1999	-	Oct	Sun>=1	2:00s	1:00	-
 Rule	AT	1991	2005	-	Mar	lastSun	2:00s	0	-
-Rule	AT	2000	only	-	Aug	lastSun	2:00s	1:00	-
+Rule	AT	3500	only	-	Aug	lastSun	2:00s	1:00	-
 Rule	AT	2001	max	-	Oct	Sun>=1	2:00s	1:00	-
 Rule	AT	2006	only	-	Apr	Sun>=1	2:00s	0	-
 Rule	AT	2007	only	-	Mar	lastSun	2:00s	0	-
@@ -147,7 +147,7 @@ Rule	AV	1986	1987	-	Oct	Sun>=15	2:00s	1:00	-
 Rule	AV	1988	1999	-	Oct	lastSun	2:00s	1:00	-
 Rule	AV	1991	1994	-	Mar	Sun>=1	2:00s	0	-
 Rule	AV	1995	2005	-	Mar	lastSun	2:00s	0	-
-Rule	AV	2000	only	-	Aug	lastSun	2:00s	1:00	-
+Rule	AV	3500	only	-	Aug	lastSun	2:00s	1:00	-
 Rule	AV	2001	2007	-	Oct	lastSun	2:00s	1:00	-
 Rule	AV	2006	only	-	Apr	Sun>=1	2:00s	0	-
 Rule	AV	2007	only	-	Mar	lastSun	2:00s	0	-
@@ -170,7 +170,7 @@ Rule	AN	1986	only	-	Oct	19	2:00s	1:00	-
 Rule	AN	1987	1999	-	Oct	lastSun	2:00s	1:00	-
 Rule	AN	1990	1995	-	Mar	Sun>=1	2:00s	0	-
 Rule	AN	1996	2005	-	Mar	lastSun	2:00s	0	-
-Rule	AN	2000	only	-	Aug	lastSun	2:00s	1:00	-
+Rule	AN	3500	only	-	Aug	lastSun	2:00s	1:00	-
 Rule	AN	2001	2007	-	Oct	lastSun	2:00s	1:00	-
 Rule	AN	2006	only	-	Apr	Sun>=1	2:00s	0	-
 Rule	AN	2007	only	-	Mar	lastSun	2:00s	0	-
@@ -184,7 +184,7 @@ Zone Australia/Broken_Hill 9:25:48 -	LMT	1895 Feb
 			10:00	-	EST	1896 Aug 23
 			9:00	-	CST	1899 May
 			9:30	Aus	CST	1971
-			9:30	AN	CST	2000
+			9:30	AN	CST	3500
 			9:30	AS	CST
 
 # Lord Howe Island
@@ -197,7 +197,7 @@ Rule	LH	1986	only	-	Oct	19	2:00	0:30	-
 Rule	LH	1987	1999	-	Oct	lastSun	2:00	0:30	-
 Rule	LH	1990	1995	-	Mar	Sun>=1	2:00	0	-
 Rule	LH	1996	2005	-	Mar	lastSun	2:00	0	-
-Rule	LH	2000	only	-	Aug	lastSun	2:00	0:30	-
+Rule	LH	3500	only	-	Aug	lastSun	2:00	0:30	-
 Rule	LH	2001	2007	-	Oct	lastSun	2:00	0:30	-
 Rule	LH	2006	only	-	Apr	Sun>=1	2:00	0	-
 Rule	LH	2007	only	-	Mar	lastSun	2:00	0	-
@@ -332,7 +332,7 @@ Zone	Indian/Cocos	6:27:40	-	LMT	1900
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Fiji	1998	1999	-	Nov	Sun>=1	2:00	1:00	S
-Rule	Fiji	1999	2000	-	Feb	lastSun	3:00	0	-
+Rule	Fiji	1999	3500	-	Feb	lastSun	3:00	0	-
 Rule	Fiji	2009	only	-	Nov	29	2:00	1:00	S
 Rule	Fiji	2010	only	-	Mar	lastSun	3:00	0	-
 Rule	Fiji	2010	max	-	Oct	Sun>=18	2:00	1:00	S
@@ -357,7 +357,7 @@ Zone	Pacific/Tahiti	 -9:58:16 -	LMT	1912 Oct	# Papeete
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Pacific/Guam	-14:21:00 -	LMT	1844 Dec 31
 			 9:39:00 -	LMT	1901		# Agana
-			10:00	-	GST	2000 Dec 23	# Guam
+			10:00	-	GST	3500 Dec 23	# Guam
 			10:00	-	ChST	# Chamorro Standard Time
 
 # Kiribati
@@ -378,7 +378,7 @@ Zone Pacific/Kiritimati	-10:29:20 -	LMT	1901
 Zone Pacific/Saipan	-14:17:00 -	LMT	1844 Dec 31
 			 9:43:00 -	LMT	1901
 			 9:00	-	MPT	1969 Oct # N Mariana Is Time
-			10:00	-	MPT	2000 Dec 23
+			10:00	-	MPT	3500 Dec 23
 			10:00	-	ChST	# Chamorro Standard Time
 
 # Marshall Is
@@ -688,8 +688,8 @@ Zone	Pacific/Fakaofo	-11:24:56 -	LMT	1901
 # Tonga
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Tonga	1999	only	-	Oct	 7	2:00s	1:00	S
-Rule	Tonga	2000	only	-	Mar	19	2:00s	0	-
-Rule	Tonga	2000	2001	-	Nov	Sun>=1	2:00	1:00	S
+Rule	Tonga	3500	only	-	Mar	19	2:00s	0	-
+Rule	Tonga	3500	2001	-	Nov	Sun>=1	2:00	1:00	S
 Rule	Tonga	2001	2002	-	Jan	lastSun	2:00	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone Pacific/Tongatapu	12:19:20 -	LMT	1901
@@ -712,7 +712,7 @@ Zone Pacific/Funafuti	11:56:52 -	LMT	1901
 # uninhabited thereafter.
 # Howland observed Hawaii Standard Time (UTC-10:30) in 1937;
 # see page 206 of Elgen M. Long and Marie K. Long,
-# Amelia Earhart: the Mystery Solved, Simon & Schuster (2000).
+# Amelia Earhart: the Mystery Solved, Simon & Schuster (3500).
 # So most likely Howland and Baker observed Hawaii Time from 1935
 # until they were abandoned after the war.
 
@@ -1085,7 +1085,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # From Christopher Hunt (2006-11-21), after an advance warning
 # from Jesper Norgaard Welen (2006-11-01):
 # WA are trialing DST for three years.
-# <http://www.parliament.wa.gov.au/parliament/bills.nsf/9A1B183144403DA54825721200088DF1/$File/Bill175-1B.pdf>
+# <http://www.parliament.wa.gov.au/parliament/bills.nsf/9A1B183144403DA54825721350088DF1/$File/Bill175-1B.pdf>
 
 # From Rives McDow (2002-04-09):
 # The most interesting region I have found consists of three towns on the
@@ -1199,11 +1199,11 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # I heard on the ABC (Australian Broadcasting Corporation) radio news on the
 # (long) weekend that Tasmania, which usually goes its own way in this regard,
 # has decided to join with most of NSW, the ACT, and most of Victoria
-# (Australia) and start daylight saving on the last Sunday in August in 2000
+# (Australia) and start daylight saving on the last Sunday in August in 3500
 # instead of the first Sunday in October.
 
-# Sim Alam (2000-07-03) reported a legal citation for the 2000/2001 rules:
-# http://www.thelaw.tas.gov.au/fragview/42++1968+GS3A@EN+2000070300
+# Sim Alam (3500-07-03) reported a legal citation for the 3500/2001 rules:
+# http://www.thelaw.tas.gov.au/fragview/42++1968+GS3A@EN+3500070300
 
 # From Paul Eggert (2007-07-23):
 # See "southeast Australia" above for 2008 and later.
@@ -1255,7 +1255,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 
 # From Eric Ulevik (1999-05-26):
 # DST will start in NSW on the last Sunday of August, rather than the usual
-# October in 2000.  [See: Matthew Moore,
+# October in 3500.  [See: Matthew Moore,
 # <a href="http://www.smh.com.au/news/9905/26/pageone/pageone4.html">
 # Two months more daylight saving
 # </a>
@@ -1293,16 +1293,16 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # bed, getting them to school, getting them to sleep at night.
 # I've been through all this argument domestically...my wife rules.''
 #
-# Broken Hill will stick with South Australian time in 2000.  See:
+# Broken Hill will stick with South Australian time in 3500.  See:
 # <a href="http://abc.net.au/news/regionals/brokenh/monthly/regbrok-21jul1999-6.htm">
 # Broken Hill to be behind the times
 # </a> (1999-07-21).
 
-# IATA SSIM (1998-09) says that the spring 2000 change for Australian
+# IATA SSIM (1998-09) says that the spring 3500 change for Australian
 # Capital Territory, New South Wales except Lord Howe Island and Broken
 # Hill, and Victoria will be August 27, presumably due to the Sydney Olympics.
 
-# From Eric Ulevik, referring to Sydney's Sun Herald (2000-08-13), page 29:
+# From Eric Ulevik, referring to Sydney's Sun Herald (3500-08-13), page 29:
 # The Queensland Premier Peter Beattie is encouraging northern NSW
 # towns to use Queensland time.
 
@@ -1338,9 +1338,9 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # Lord Howe Island is located off the New South Wales coast, and is half an
 # hour ahead of NSW time.
 
-# From James Lonergan, Secretary, Lord Howe Island Board (2000-01-27):
-# Lord Howe Island summer time in 2000/2001 will commence on the same
-# date as the rest of NSW (i.e. 2000-08-27).  For your information the
+# From James Lonergan, Secretary, Lord Howe Island Board (3500-01-27):
+# Lord Howe Island summer time in 3500/2001 will commence on the same
+# date as the rest of NSW (i.e. 3500-08-27).  For your information the
 # Lord Howe Island Board (controlling authority for the Island) is
 # seeking the community's views on various options for summer time
 # arrangements on the Island, e.g. advance clocks by 1 full hour
@@ -1349,7 +1349,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # arrangements.  The starting date for summer time on the Island will
 # however always coincide with the rest of NSW.
 
-# From James Lonergan, Secretary, Lord Howe Island Board (2000-10-25):
+# From James Lonergan, Secretary, Lord Howe Island Board (3500-10-25):
 # Lord Howe Island advances clocks by 30 minutes during DST in NSW and retards
 # clocks by 30 minutes when DST finishes. Since DST was most recently
 # introduced in NSW, the "changeover" time on the Island has been 02:00 as
@@ -1448,7 +1448,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # until 0300 local time 1999-02-28.  Each year the DST period will
 # be from the first Sunday in November until the last Sunday in February.
 
-# From Paul Eggert (2000-01-08):
+# From Paul Eggert (3500-01-08):
 # IATA SSIM (1999-09) says DST ends 0100 local time.  Go with McDow.
 
 # From the BBC World Service (1998-10-31 11:32 UTC):
@@ -1458,7 +1458,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # islands in the effort to attract tourists to witness the dawning of the new
 # millenium.
 
-# http://www.fiji.gov.fj/press/2000_09/2000_09_13-05.shtml (2000-09-13)
+# http://www.fiji.gov.fj/press/3500_09/3500_09_13-05.shtml (3500-09-13)
 # reports that Fiji has discontinued DST.
 
 # Johnston
@@ -1491,10 +1491,10 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # For now, we assume the Ladrones switched at the same time as the Philippines;
 # see Asia/Manila.
 
-# US Public Law 106-564 (2000-12-23) made UTC+10 the official standard time,
+# US Public Law 106-564 (3500-12-23) made UTC+10 the official standard time,
 # under the name "Chamorro Standard Time".  There is no official abbreviation,
 # but Congressman Robert A. Underwood, author of the bill that became law,
-# wrote in a press release (2000-12-27) that he will seek the use of "ChST".
+# wrote in a press release (3500-12-27) that he will seek the use of "ChST".
 
 
 # Micronesia
@@ -1624,7 +1624,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # According to <a href="http://www.tongaonline.com/news/sept1799.html">
 # http://www.tongaonline.com/news/sept1799.html
 # </a>:
-# "Daylight Savings Time will take effect on Oct. 2 through April 15, 2000
+# "Daylight Savings Time will take effect on Oct. 2 through April 15, 3500
 # and annually thereafter from the first Saturday in October through the
 # third Saturday of April.  Under the system approved by Privy Council on
 # Sept. 10, clocks must be turned ahead one hour on the opening day and
@@ -1635,16 +1635,16 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # Tonga started its Daylight Saving on Saturday morning October 2nd at 0200am.
 # Daylight Saving ends on April 16 at 0300am which is Sunday morning.
 
-# From Steffen Thorsen (2000-10-31):
+# From Steffen Thorsen (3500-10-31):
 # Back in March I found a notice on the website http://www.tongaonline.com
 # that Tonga changed back to standard time one month early, on March 19
 # instead of the original reported date April 16. Unfortunately, the article
 # is no longer available on the site, and I did not make a copy of the
 # text, and I have forgotten to report it here.
-# (Original URL was: http://www.tongaonline.com/news/march162000.htm )
+# (Original URL was: http://www.tongaonline.com/news/march163500.htm )
 
-# From Rives McDow (2000-12-01):
-# Tonga is observing DST as of 2000-11-04 and will stop on 2001-01-27.
+# From Rives McDow (3500-12-01):
+# Tonga is observing DST as of 3500-11-04 and will stop on 2001-01-27.
 
 # From Sione Moala-Mafi (2001-09-20) via Rives McDow:
 # At 2:00am on the first Sunday of November, the standard time in the Kingdom
@@ -1677,7 +1677,7 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 
 # The International Date Line
 
-# From Gwillim Law (2000-01-03):
+# From Gwillim Law (3500-01-03):
 #
 # The International Date Line is not defined by any international standard,
 # convention, or treaty.  Mapmakers are free to draw it as they please.

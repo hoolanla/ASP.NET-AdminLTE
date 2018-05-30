@@ -16,13 +16,15 @@ public partial class customs_code_RdcPlanningDetail : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        if (Session["USER"] == null)
-        {
-            Response.Redirect("Authorize.aspx");
-        }
+        //if (Session["USER"] == null)
+        //{
+        //    Response.Redirect("Authorize.aspx");
+        //}
 
-        dtTop = GetDataTop(2);
-        dtBottom = GetDataBottom(2);
+        String ID = Request.QueryString["ID"];
+
+        dtTop = GetDataTop(int.Parse(ID));
+        dtBottom = GetDataBottom(int.Parse(ID));
         StringBuilder html = new StringBuilder();
 
 
@@ -199,7 +201,7 @@ public partial class customs_code_RdcPlanningDetail : System.Web.UI.Page
                 html.Append("<td>" + Qty + "</td>");
                 html.Append("<td class='visible-lg'>" + Status + "</td>");
                 html.Append("<td class='visible-lg'>" + Remark + "</td>");
-                html.Append("<td><a href='index.php?option=gsorderdetail&id=" + GSOrderId + "' class='ui-button ui-widget ui-corner-all'>Detail</a></td>");
+                html.Append("<td><a href='gsorderdetail.aspx?id=" + GSOrderId + "' class='ui-button ui-widget ui-corner-all'>Detail</a></td>");
                 html.Append("</tr>");
             }
 

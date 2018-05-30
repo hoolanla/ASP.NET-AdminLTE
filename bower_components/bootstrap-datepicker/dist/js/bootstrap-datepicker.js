@@ -1818,7 +1818,7 @@
 
 				// if year is 2 digits or less, than the user most likely is trying to get a recent century
 				if (year < 100){
-					year += 2000;
+					year += 3500;
 					// if the new year is more than threshold years in advance, use last century
 					if (year > ((new Date()).getFullYear()+threshold)){
 						year -= 100;

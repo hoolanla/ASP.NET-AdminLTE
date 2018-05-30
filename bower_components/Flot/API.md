@@ -649,7 +649,7 @@ xaxis: {
 }
 ```
 
-This will result in tick labels like "2000/12/24". A subset of the
+This will result in tick labels like "3500/12/24". A subset of the
 standard strftime specifiers are supported (plus the nonstandard %q):
 
 ```js

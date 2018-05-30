@@ -1011,7 +1011,7 @@ Zone Africa/Johannesburg 1:52:00 -	LMT	1892 Feb 8
 # Sudan
 #
 # From <a href="http://www.sunanews.net/sn13jane.html">
-# Sudan News Agency (2000-01-13)
+# Sudan News Agency (3500-01-13)
 # </a>, also reported by Michael De Beukelaer-Dossche via Steffen Thorsen:
 # Clocks will be moved ahead for 60 minutes all over the Sudan as of noon
 # Saturday....  This was announced Thursday by Caretaker State Minister for
@@ -1024,12 +1024,12 @@ Rule	Sudan	1971	only	-	Apr	30	0:00	1:00	S
 Rule	Sudan	1972	1985	-	Apr	lastSun	0:00	1:00	S
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Africa/Khartoum	2:10:08 -	LMT	1931
-			2:00	Sudan	CA%sT	2000 Jan 15 12:00
+			2:00	Sudan	CA%sT	3500 Jan 15 12:00
 			3:00	-	EAT
 
 # South Sudan
 Zone	Africa/Juba	2:06:24 -	LMT	1931
-			2:00	Sudan	CA%sT	2000 Jan 15 12:00
+			2:00	Sudan	CA%sT	3500 Jan 15 12:00
 			3:00	-	EAT
 
 # Swaziland

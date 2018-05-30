@@ -22,6 +22,7 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
 
         dtTop = GetDataTop(ID);
         dtBottom = GetDataBottom(ID);
+       genSesion(ID);
         StringBuilder html = new StringBuilder();
 
 
@@ -132,6 +133,7 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
         html.Append("<tr>");
         html.Append("<th width = \"10%\" > No.</ th >");
         html.Append("<th width= \"40%\">Order No.</th>");
+        html.Append("<th width= \"40%\">Barcode</th>");
         html.Append("<th width = \"10%\" >Label</ th >");
         html.Append("<th width= \"20%\" class=\"visible-lg\">Status</th>");
         html.Append("<th width = \"20%\" class=\"visible-lg\">Remark</th>");
@@ -143,14 +145,14 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
 
         if (dtBottom.Rows.Count > 0)
         {
-            string Id, ProdName, Desc, rwProdStatus; 
+            string Id, ProdName, Desc, rwProdStatus,TransBillNo; 
             for (int i = 0; i < dtBottom.Rows.Count; i++)
             {
                 Id = dtBottom.Rows[i]["ID"].ToString();
                 ProdName = dtBottom.Rows[i]["ProductName"].ToString();
                 Desc = dtBottom.Rows[i]["Description"].ToString();
                 rwProdStatus = dtBottom.Rows[i]["Status"].ToString();
-
+                TransBillNo = dtBottom.Rows[i]["TransBillNo"].ToString();
                 switch (rwProdStatus)
                 {
                     case "0":
@@ -189,6 +191,7 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
                 html.Append("<tr>");
                 html.Append("<td>" + (i + 1) + "</td>");
                 html.Append("<td>" + ProdName + "</td>");
+                html.Append("<td>" + TransBillNo + "</td>");
 
                 html.Append("<td><textarea name= \"txtlbl\" id= \"txtlbl\" rows= \"4\" cols= \"60\">" + Desc + "</textarea></td>");
                 html.Append("<td class='visible-lg'>" + Status + "</td>");
@@ -209,7 +212,7 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
         html.Append("<tbody>");
         html.Append("<tr align= \"left\">");
         html.Append("<td width= \"80\"><input type= \"button\" name= \"btnBack\" id= \"btnBack\" value= \"Back\" onClick= \"window.history.go(-1); return false;\" class='ui-button ui-widget ui-corner-all'></td>");
-        html.Append("<td width= \"80\"><input type= \"button\" name= \"btnPrint\" id= \"btnPrint\" value= \"Print\" onClick= \"window.open('./customs/code/qrcodegen/gsorderprintqr.php?id=>','_blank');\" class='ui-button ui-widget ui-corner-all'></td>");
+        html.Append("<td width= \"80\"><input type= \"button\" name= \"btnPrint\" id= \"btnPrint\" value= \"Print\" onClick= \"window.open('./Report/Report_GSOrder.aspx','_blank');\" class='ui-button ui-widget ui-corner-all'></td>");
         html.Append("<td width= \"100\"><a href='./gsorderpickup.aspx?id=" + ID + "&no=" + GROrderNo + "' class='ui-button ui-widget ui-corner-all'>Pick up</a></td>");
         html.Append("<td width= \"160\"><a href='./gsorderfile.aspx?id=" + ID + "&no=" + GROrderNo + "' class='ui-button ui-widget ui-corner-all'>File Attachment</a></td>");
         html.Append("</tr>");
@@ -223,8 +226,22 @@ public partial class customs_code_GSOrderDetail : System.Web.UI.Page
         cph = (ContentPlaceHolder)Master.FindControl("ContentPlaceHolder1");
         cph.Controls.Add(new Literal { Text = html.ToString() });
 
+
+
+    
+
+
     }
 
+    private Boolean genSesion(String GSOrderID)
+    {
+
+        DataTable dt;
+        BLL.GSOrder _BLL = new BLL.GSOrder();
+        dt = _BLL.getGSOder_Report(GSOrderID);
+        Session["DATATABLE"] = dt;
+        return true;
+    }
 
     private DataTable GetDataTop(String GSOrderID)
     {

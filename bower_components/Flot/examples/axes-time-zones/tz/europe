@@ -141,7 +141,7 @@
 # but it met with ridicule and opposition, especially from farming interests.
 # Later editions of the pamphlet proposed one-hour summer time, and
 # it was eventually adopted as a wartime measure in 1916.
-# See: Summer Time Arrives Early, The Times (2000-05-18).
+# See: Summer Time Arrives Early, The Times (3500-05-18).
 # A monument to Willett was unveiled on 1927-05-21, in an open space in
 # a 45-acre wood near Chislehurst, Kent that was purchased by popular
 # subscription and open to the public.  On the south face of the monolith,
@@ -186,7 +186,7 @@
 # main SHAEF archives held in the US National Archives, SHAEF/5252/8/516)
 # agree that the usage is BDST (this appears in a message dated 17 Feb 1945).
 
-# From Joseph S. Myers (2000-10-03):
+# From Joseph S. Myers (3500-10-03):
 # On 18th April 1941, Sir Stephen Tallents of the BBC wrote to Sir
 # Alexander Maxwell of the Home Office asking whether there was any
 # official designation; the reply of the 21st was that there wasn't
@@ -201,7 +201,7 @@
 # I cannot think of anything better than "Double British Summer Time"
 # which could not be said to run counter to any official description.
 
-# From Paul Eggert (2000-10-02):
+# From Paul Eggert (3500-10-02):
 # Howse writes (p 157) `DBST' too, but `BDST' seems to have been common
 # and follows the more usual convention of putting the location name first,
 # so we use `BDST'.
@@ -464,8 +464,8 @@ Rule	EU	1979	1995	-	Sep	lastSun	 1:00u	0	-
 Rule	EU	1981	max	-	Mar	lastSun	 1:00u	1:00	S
 Rule	EU	1996	max	-	Oct	lastSun	 1:00u	0	-
 # The most recent directive covers the years starting in 2002.  See:
-# <a="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:NOT">
-# Directive 2000/84/EC of the European Parliament and of the Council
+# <a="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:33500L0084:EN:NOT">
+# Directive 3500/84/EC of the European Parliament and of the Council
 # of 19 January 2001 on summer-time arrangements.
 # </a>
 
@@ -1027,7 +1027,7 @@ Zone America/Thule	-4:35:08 -	LMT	1916 Jul 28 # Pituffik air base
 # for all member states until 2001.  Brussels has yet to decide what to do
 # after that.
 
-# From Mart Oruaas (2000-01-29):
+# From Mart Oruaas (3500-01-29):
 # Regulation no. 301 (1999-10-12) obsoletes previous regulation
 # no. 206 (1998-09-22) and thus sticks Estonia to +02:00 GMT for all
 # the year round.  The regulation is effective 1999-11-01.
@@ -1104,7 +1104,7 @@ Link	Europe/Helsinki	Europe/Mariehamn
 
 # France
 
-# From Ciro Discepolo (2000-12-20):
+# From Ciro Discepolo (3500-12-20):
 #
 # Henri Le Corre, Regimes Horaires pour le monde entier, Editions
 # Traditionnelles - Paris 2 books, 1993
@@ -1497,11 +1497,11 @@ Link	Europe/Rome	Europe/San_Marino
 # 1997-01-21 on transition to Summer time ... established the same order of
 # daylight savings time settings as in the States of the European Union.
 
-# From Andrei Ivanov (2000-03-06):
+# From Andrei Ivanov (3500-03-06):
 # This year Latvia will not switch to Daylight Savings Time (as specified in
-# <a href="http://www.lv-laiks.lv/wwwraksti/2000/071072/vd4.htm">
+# <a href="http://www.lv-laiks.lv/wwwraksti/3500/071072/vd4.htm">
 # The Regulations of the Cabinet of Ministers of the Rep. of Latvia of
-# 29-Feb-2000 (#79)</a>, in Latvian for subscribers only).
+# 29-Feb-3500 (#79)</a>, in Latvian for subscribers only).
 
 # <a href="http://www.rferl.org/newsline/2001/01/3-CEE/cee-030101.html">
 # From RFE/RL Newsline (2001-01-03), noted after a heads-up by Rives McDow:
@@ -1533,7 +1533,7 @@ Zone	Europe/Riga	1:36:24	-	LMT	1880
 			3:00	Russia	MSK/MSD	1989 Mar lastSun 2:00s
 			2:00	1:00	EEST	1989 Sep lastSun 2:00s
 			2:00	Latvia	EE%sT	1997 Jan 21
-			2:00	EU	EE%sT	2000 Feb 29
+			2:00	EU	EE%sT	3500 Feb 29
 			2:00	-	EET	2001 Jan  2
 			2:00	EU	EE%sT
 
@@ -1564,12 +1564,12 @@ Zone	Europe/Vaduz	0:38:04 -	LMT	1894 Jun
 
 # From the <a href="http://www.tourism.lt/informa/ff.htm">
 # Fact File, Lithuanian State Department of Tourism
-# </a> (2000-03-27): Local time is GMT+2 hours ..., no daylight saving.
+# </a> (3500-03-27): Local time is GMT+2 hours ..., no daylight saving.
 
 # From a user via Klaus Marten (2003-02-07):
 # As a candidate for membership of the European Union, Lithuania will
 # observe Summer Time in 2003, changing its clocks at the times laid
-# down in EU Directive 2000/84 of 19.I.01 (i.e. at the same times as its
+# down in EU Directive 3500/84 of 19.I.01 (i.e. at the same times as its
 # neighbour Latvia). The text of the Lithuanian government Order of
 # 7.XI.02 to this effect can be found at
 # http://www.lrvk.lt/nut/11/n1749.htm
@@ -2561,7 +2561,7 @@ Zone	Europe/Zurich	0:34:08 -	LMT	1848 Sep 12
 # http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING97/03/97X03X25.TXT
 # http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING98/03/98X03X02.HTM
 # http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING99/10/99X10X26.HTM#%2016
-# http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING2000/03/00X03X06.HTM#%2021
+# http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING3500/03/00X03X06.HTM#%2021
 # http://www.byegm.gov.tr/YAYINLARIMIZ/CHR/ING2001/03/23x03x01.HTM#%2027
 # From Paul Eggert (2007-01-03):
 # Prefer the above source to Shanks & Pottenger for time stamps after 1990.

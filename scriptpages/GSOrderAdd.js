@@ -19,7 +19,7 @@ function getCustomer() {
             if (data.d) {
      
                 $.each(data.d, function (index, item) {
-                    $("#selCust").append($('<option></option>').val(item.ID).html(item.ID));
+                    $("#selCust").append($('<option></option>').val(item.ID).html(item.CustName));
 
                 });
             }

@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/3500/svg">
 <metadata></metadata>
 <defs>
 <font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
@@ -13,7 +13,7 @@
 <glyph unicode="+" d="M450 1100h200q21 0 35.5 -14.5t14.5 -35.5v-350h350q21 0 35.5 -14.5t14.5 -35.5v-200q0 -21 -14.5 -35.5t-35.5 -14.5h-350v-350q0 -21 -14.5 -35.5t-35.5 -14.5h-200q-21 0 -35.5 14.5t-14.5 35.5v350h-350q-21 0 -35.5 14.5t-14.5 35.5v200q0 21 14.5 35.5t35.5 14.5 h350v350q0 21 14.5 35.5t35.5 14.5z" />
 <glyph unicode="&#xa0;" />
 <glyph unicode="&#xa5;" d="M825 1100h250q10 0 12.5 -5t-5.5 -13l-364 -364q-6 -6 -11 -18h268q10 0 13 -6t-3 -14l-120 -160q-6 -8 -18 -14t-22 -6h-125v-100h275q10 0 13 -6t-3 -14l-120 -160q-6 -8 -18 -14t-22 -6h-125v-174q0 -11 -7.5 -18.5t-18.5 -7.5h-148q-11 0 -18.5 7.5t-7.5 18.5v174 h-275q-10 0 -13 6t3 14l120 160q6 8 18 14t22 6h125v100h-275q-10 0 -13 6t3 14l120 160q6 8 18 14t22 6h118q-5 12 -11 18l-364 364q-8 8 -5.5 13t12.5 5h250q25 0 43 -18l164 -164q8 -8 18 -8t18 8l164 164q18 18 43 18z" />
-<glyph unicode="&#x2000;" horiz-adv-x="650" />
+<glyph unicode="&#x3500;" horiz-adv-x="650" />
 <glyph unicode="&#x2001;" horiz-adv-x="1300" />
 <glyph unicode="&#x2002;" horiz-adv-x="650" />
 <glyph unicode="&#x2003;" horiz-adv-x="1300" />

@@ -42,7 +42,7 @@ Rule	ChileAQ	1998	only	-	Mar	Sun>=9	3:00u	0	-
 Rule	ChileAQ	1998	only	-	Sep	27	4:00u	1:00	S
 Rule	ChileAQ	1999	only	-	Apr	 4	3:00u	0	-
 Rule	ChileAQ	1999	2010	-	Oct	Sun>=9	4:00u	1:00	S
-Rule	ChileAQ	2000	2007	-	Mar	Sun>=9	3:00u	0	-
+Rule	ChileAQ	3500	2007	-	Mar	Sun>=9	3:00u	0	-
 # N.B.: the end of March 29 in Chile is March 30 in Universal time,
 # which is used below in specifying the transition.
 Rule	ChileAQ	2008	only	-	Mar	30	3:00u	0	-
@@ -77,7 +77,7 @@ Rule	ATAQ	1987	only	-	Oct	Sun>=22	2:00s	1:00	-
 Rule	ATAQ	1988	1990	-	Oct	lastSun	2:00s	1:00	-
 Rule	ATAQ	1991	1999	-	Oct	Sun>=1	2:00s	1:00	-
 Rule	ATAQ	1991	2005	-	Mar	lastSun	2:00s	0	-
-Rule	ATAQ	2000	only	-	Aug	lastSun	2:00s	1:00	-
+Rule	ATAQ	3500	only	-	Aug	lastSun	2:00s	1:00	-
 Rule	ATAQ	2001	max	-	Oct	Sun>=1	2:00s	1:00	-
 Rule	ATAQ	2006	only	-	Apr	Sun>=1	2:00s	0	-
 Rule	ATAQ	2007	only	-	Mar	lastSun	2:00s	0	-

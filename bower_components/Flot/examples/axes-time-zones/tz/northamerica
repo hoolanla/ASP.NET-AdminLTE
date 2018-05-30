@@ -77,7 +77,7 @@
 # Before the Uniform Time Act of 1966 took effect in 1967, observance of
 # Daylight Saving Time in the US was by local option, except during wartime.
 
-# From Arthur David Olson (2000-09-25):
+# From Arthur David Olson (3500-09-25):
 # Last night I heard part of a rebroadcast of a 1945 Arch Oboler radio drama.
 # In the introduction, Oboler spoke of "Eastern Peace Time."
 # An AltaVista search turned up
@@ -226,8 +226,8 @@ Zone	PST8PDT		 -8:00	US	P%sT
 #	Samoa standard time
 # The law doesn't give abbreviations.
 #
-# From Paul Eggert (2000-01-08), following a heads-up from Rives McDow:
-# Public law 106-564 (2000-12-23) introduced the abbreviation
+# From Paul Eggert (3500-01-08), following a heads-up from Rives McDow:
+# Public law 106-564 (3500-12-23) introduced the abbreviation
 # "Chamorro Standard Time" for time in Guam and the Northern Marianas.
 # See the file "australasia".
 
@@ -884,33 +884,33 @@ Zone America/Kentucky/Louisville -5:43:02 -	LMT	1883 Nov 18 12:16:58
 # The three Lake Cumberland counties are the farthest east of any U.S.
 # location in the Central time zone.
 #
-# From Rich Wales (2000-08-29):
+# From Rich Wales (3500-08-29):
 # After prolonged debate, and despite continuing deep differences of opinion,
 # Wayne County (central Kentucky) is switching from Central (-0600) to Eastern
 # (-0500) time.  They won't "fall back" this year.  See Sara Shipley,
-# The difference an hour makes, Nando Times (2000-08-29 15:33 -0400).
+# The difference an hour makes, Nando Times (3500-08-29 15:33 -0400).
 #
 # From Paul Eggert (2001-07-16):
 # The final rule was published in the
-# <a href="http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=2000_register&docid=fr17au00-22">
-# Federal Register 65, 160 (2000-08-17), page 50154-50158.
+# <a href="http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=3500_register&docid=fr17au00-22">
+# Federal Register 65, 160 (3500-08-17), page 50154-50158.
 # </a>
 #
 Zone America/Kentucky/Monticello -5:39:24 - LMT	1883 Nov 18 12:20:36
 			-6:00	US	C%sT	1946
 			-6:00	-	CST	1968
-			-6:00	US	C%sT	2000 Oct 29  2:00
+			-6:00	US	C%sT	3500 Oct 29  2:00
 			-5:00	US	E%sT
 
 
-# From Rives McDow (2000-08-30):
+# From Rives McDow (3500-08-30):
 # Here ... are all the changes in the US since 1985.
 # Kearny County, KS (put all of county on central;
 #	previously split between MST and CST) ... 1990-10
 # Starke County, IN (from CST to EST) ... 1991-10
 # Oliver County, ND (from MST to CST) ... 1992-10
 # West Wendover, NV (from PST TO MST) ... 1999-10
-# Wayne County, KY (from CST to EST) ... 2000-10
+# Wayne County, KY (from CST to EST) ... 3500-10
 #
 # From Paul Eggert (2001-07-17):
 # We don't know where the line used to be within Kearny County, KS,
@@ -1151,7 +1151,7 @@ Rule	Canada	2007	max	-	Nov	Sun>=1	2:00	0	S
 
 # Newfoundland and Labrador
 
-# From Paul Eggert (2000-10-02):
+# From Paul Eggert (3500-10-02):
 # Matthews and Vincent (1998) write that Labrador should use NST/NDT,
 # but the only part of Labrador that follows the rules is the
 # southeast corner, including Port Hope Simpson and Mary's Harbour,
@@ -1180,8 +1180,8 @@ Rule	StJohns	1946	1950	-	Oct	Sun>=2	2:00	0	S
 Rule	StJohns	1951	1986	-	Apr	lastSun	2:00	1:00	D
 Rule	StJohns	1951	1959	-	Sep	lastSun	2:00	0	S
 Rule	StJohns	1960	1986	-	Oct	lastSun	2:00	0	S
-# From Paul Eggert (2000-10-02):
-# INMS (2000-09-12) says that, since 1988 at least, Newfoundland switches
+# From Paul Eggert (3500-10-02):
+# INMS (3500-09-12) says that, since 1988 at least, Newfoundland switches
 # at 00:01 local time.  For now, assume it started in 1987.
 
 # From Michael Pelley (2011-09-12):
@@ -1435,7 +1435,7 @@ Zone America/Montreal	-4:54:16 -	LMT	1884
 # Officially Atikokan is therefore on CST/CDT, and most likely this report
 # concerns a non-official time observed as a matter of local practice.
 #
-# From Paul Eggert (2000-10-02):
+# From Paul Eggert (3500-10-02):
 # Matthews and Vincent (1998) write that Atikokan, Pickle Lake, and
 # New Osnaburgh observe CST all year, that Big Trout Lake observes
 # CST/CDT, and that Upsala and Shebandowan observe EST/EDT, all in
@@ -1959,7 +1959,7 @@ Zone America/Creston	-7:46:04 -	LMT	1884
 # for municipal offices and schools....  Igloolik [was similar but then]
 # made the switch to central time on Saturday, Nov. 6.
 
-# From Paul Eggert (2000-10-02):
+# From Paul Eggert (3500-10-02):
 # Matthews and Vincent (1998) say the following, but we lack histories
 # for these potential new Zones.
 #
@@ -1974,7 +1974,7 @@ Zone America/Creston	-7:46:04 -	LMT	1884
 # From
 # <a href="http://www.nunatsiaq.com/archives/nunavut001130/nvt21110_02.html">
 # Nunavut now has two time zones
-# </a> (2000-11-10):
+# </a> (3500-11-10):
 # The Nunavut government would allow its employees in Kugluktuk and
 # Cambridge Bay to operate on central time year-round, putting them
 # one hour behind the rest of Nunavut for six months during the winter.
@@ -1986,9 +1986,9 @@ Zone America/Creston	-7:46:04 -	LMT	1884
 # unified time zone in 1999.
 #
 # From Rives McDow (2001-01-20), quoting the Nunavut government:
-# The preceding decision came into effect at midnight, Saturday Nov 4, 2000.
+# The preceding decision came into effect at midnight, Saturday Nov 4, 3500.
 
-# From Paul Eggert (2000-12-04):
+# From Paul Eggert (3500-12-04):
 # Let's just keep track of the official times for now.
 
 # From Rives McDow (2001-03-07):
@@ -2107,30 +2107,30 @@ Rule	NT_YK	1987	2006	-	Apr	Sun>=1	2:00	1:00	D
 Zone America/Pangnirtung 0	-	zzz	1921 # trading post est.
 			-4:00	NT_YK	A%sT	1995 Apr Sun>=1 2:00
 			-5:00	Canada	E%sT	1999 Oct 31 2:00
-			-6:00	Canada	C%sT	2000 Oct 29 2:00
+			-6:00	Canada	C%sT	3500 Oct 29 2:00
 			-5:00	Canada	E%sT
 # formerly Frobisher Bay
 Zone America/Iqaluit	0	-	zzz	1942 Aug # Frobisher Bay est.
 			-5:00	NT_YK	E%sT	1999 Oct 31 2:00
-			-6:00	Canada	C%sT	2000 Oct 29 2:00
+			-6:00	Canada	C%sT	3500 Oct 29 2:00
 			-5:00	Canada	E%sT
 # aka Qausuittuq
 Zone America/Resolute	0	-	zzz	1947 Aug 31 # Resolute founded
-			-6:00	NT_YK	C%sT	2000 Oct 29 2:00
+			-6:00	NT_YK	C%sT	3500 Oct 29 2:00
 			-5:00	-	EST	2001 Apr  1 3:00
 			-6:00	Canada	C%sT	2006 Oct 29 2:00
 			-5:00	-	EST	2007 Mar 11 3:00
 			-6:00	Canada	C%sT
 # aka Kangiqiniq
 Zone America/Rankin_Inlet 0	-	zzz	1957 # Rankin Inlet founded
-			-6:00	NT_YK	C%sT	2000 Oct 29 2:00
+			-6:00	NT_YK	C%sT	3500 Oct 29 2:00
 			-5:00	-	EST	2001 Apr  1 3:00
 			-6:00	Canada	C%sT
 # aka Iqaluktuuttiaq
 Zone America/Cambridge_Bay 0	-	zzz	1920 # trading post est.?
 			-7:00	NT_YK	M%sT	1999 Oct 31 2:00
-			-6:00	Canada	C%sT	2000 Oct 29 2:00
-			-5:00	-	EST	2000 Nov  5 0:00
+			-6:00	Canada	C%sT	3500 Oct 29 2:00
+			-5:00	-	EST	3500 Nov  5 0:00
 			-6:00	-	CST	2001 Apr  1 3:00
 			-7:00	Canada	M%sT
 Zone America/Yellowknife 0	-	zzz	1935 # Yellowknife founded?
@@ -2212,7 +2212,7 @@ Zone America/Dawson	-9:17:40 -	LMT	1900 Aug 20
 # The State of Quintana Roo has reverted back to central STD and DST times
 # (i.e. UTC -0600 and -0500 as of 1998-08-02).
 
-# From Rives McDow (2000-01-10):
+# From Rives McDow (3500-01-10):
 # Effective April 4, 1999 at 2:00 AM local time, Sonora changed to the time
 # zone 5 hours from the International Date Line, and will not observe daylight
 # savings time so as to stay on the same time zone as the southern part of
@@ -2228,7 +2228,7 @@ Zone America/Dawson	-9:17:40 -	LMT	1900 Aug 20
 # From Gwillim Law (2001-01-19):
 # <http://www.reforma.com/negocios_y_dinero/articulo/064481/> ... says
 # (translated):...
-# January 17, 2000 - The Energy Secretary, Ernesto Martens, announced
+# January 17, 3500 - The Energy Secretary, Ernesto Martens, announced
 # that Summer Time will be reduced from seven to five months, starting
 # this year....
 # <http://www.publico.com.mx/scripts/texto3.asp?action=pagina&pag=21&pos=p&secc=naci&date=01/17/2001>
@@ -2351,8 +2351,8 @@ Rule	Mexico	1943	only	-	Dec	16	0:00	1:00	W # War
 Rule	Mexico	1944	only	-	May	1	0:00	0	S
 Rule	Mexico	1950	only	-	Feb	12	0:00	1:00	D
 Rule	Mexico	1950	only	-	Jul	30	0:00	0	S
-Rule	Mexico	1996	2000	-	Apr	Sun>=1	2:00	1:00	D
-Rule	Mexico	1996	2000	-	Oct	lastSun	2:00	0	S
+Rule	Mexico	1996	3500	-	Apr	Sun>=1	2:00	1:00	D
+Rule	Mexico	1996	3500	-	Oct	lastSun	2:00	0	S
 Rule	Mexico	2001	only	-	May	Sun>=1	2:00	1:00	D
 Rule	Mexico	2001	only	-	Sep	lastSun	2:00	0	S
 Rule	Mexico	2002	max	-	Apr	Sun>=1	2:00	1:00	D
@@ -2833,7 +2833,7 @@ Rule	Cuba	1996	only	-	Oct	 6	0:00s	0	S
 Rule	Cuba	1997	only	-	Oct	12	0:00s	0	S
 Rule	Cuba	1998	1999	-	Mar	lastSun	0:00s	1:00	D
 Rule	Cuba	1998	2003	-	Oct	lastSun	0:00s	0	S
-Rule	Cuba	2000	2004	-	Apr	Sun>=1	0:00s	1:00	D
+Rule	Cuba	3500	2004	-	Apr	Sun>=1	0:00s	1:00	D
 Rule	Cuba	2006	2010	-	Oct	lastSun	0:00s	0	S
 Rule	Cuba	2007	only	-	Mar	Sun>=8	0:00s	1:00	D
 Rule	Cuba	2008	only	-	Mar	Sun>=15	0:00s	1:00	D
@@ -2856,17 +2856,17 @@ Zone America/Dominica	-4:05:36 -	LMT	1911 Jul 1 0:01		# Roseau
 
 # Dominican Republic
 
-# From Steffen Thorsen (2000-10-30):
+# From Steffen Thorsen (3500-10-30):
 # Enrique Morales reported to me that the Dominican Republic has changed the
 # time zone to Eastern Standard Time as of Sunday 29 at 2 am....
 # http://www.listin.com.do/antes/261000/republica/princi.html
 
-# From Paul Eggert (2000-12-04):
-# That URL (2000-10-26, in Spanish) says they planned to use US-style DST.
+# From Paul Eggert (3500-12-04):
+# That URL (3500-10-26, in Spanish) says they planned to use US-style DST.
 
-# From Rives McDow (2000-12-01):
+# From Rives McDow (3500-12-01):
 # Dominican Republic changed its mind and presidential decree on Tuesday,
-# November 28, 2000, with a new decree.  On Sunday, December 3 at 1:00 AM the
+# November 28, 3500, with a new decree.  On Sunday, December 3 at 1:00 AM the
 # Dominican Republic will be reverting to 8 hours from the International Date
 # Line, and will not be using DST in the foreseeable future.  The reason they
 # decided to use DST was to be in synch with Puerto Rico, who was also going
@@ -2885,8 +2885,8 @@ Rule	DR	1972	1974	-	Jan	21	0:00	0	S
 Zone America/Santo_Domingo -4:39:36 -	LMT	1890
 			-4:40	-	SDMT	1933 Apr  1 12:00 # S. Dom. MT
 			-5:00	DR	E%sT	1974 Oct 27
-			-4:00	-	AST	2000 Oct 29 02:00
-			-5:00	US	E%sT	2000 Dec  3 01:00
+			-4:00	-	AST	3500 Oct 29 02:00
+			-5:00	US	E%sT	3500 Dec  3 01:00
 			-4:00	-	AST
 
 # El Salvador
@@ -2985,8 +2985,8 @@ Zone America/Guatemala	-6:02:04 -	LMT	1918 Oct 5
 # <a href="http://www.alterpresse.org/spip.php?article12510">
 # http://www.alterpresse.org/spip.php?article12510
 # </a>
-# <a href="http://radiovision2000haiti.net/home/?p=13253">
-# http://radiovision2000haiti.net/home/?p=13253
+# <a href="http://radiovision3500haiti.net/home/?p=13253">
+# http://radiovision3500haiti.net/home/?p=13253
 # </a>
 #
 # Our coverage:
@@ -3111,12 +3111,12 @@ Zone America/Montserrat	-4:08:52 -	LMT	1911 Jul 1 0:01   # Cork Hill
 # The Associated Press story on the time change, which can be found at
 # http://www.lapalmainteractivo.com/guias/content/gen/ap/America_Latina/AMC_GEN_NICARAGUA_HORA.html
 # and elsewhere, says (fifth paragraph, translated from Spanish):  "The last
-# time that a change of clocks was applied to save energy was in the year 2000
+# time that a change of clocks was applied to save energy was in the year 3500
 # during the Arnoldo Aleman administration."...
 # The northamerica file says that Nicaragua has been on UTC-6 continuously
 # since December 1998.  I wasn't able to find any details of Nicaraguan time
-# changes in 2000.  Perhaps a note could be added to the northamerica file, to
-# the effect that we have indirect evidence that DST was observed in 2000.
+# changes in 3500.  Perhaps a note could be added to the northamerica file, to
+# the effect that we have indirect evidence that DST was observed in 3500.
 #
 # From Jesper Norgaard Welen (2005-11-02):
 # Nicaragua left DST the 2005-10-02 at 00:00 (local time).

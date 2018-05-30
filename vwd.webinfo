@@ -41,6 +41,20 @@
   
     
   
+    
+  
+    
+  
+    
+    
+  
+    
+    
+  
+    <Service ID="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}"/>
+    
+  
     <Service ID="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}"/>
+    <Service ID="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}"/>
   </StartupServices>
 </VisualWebDeveloper>

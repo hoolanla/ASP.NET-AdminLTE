@@ -16,6 +16,24 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="MTBranchId" type="xs:string" minOccurs="0" />
+              <xs:element name="MTName" type="xs:string" minOccurs="0" />
+              <xs:element name="MTBranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+              <xs:element name="GSOrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductId" type="xs:string" minOccurs="0" />
+              <xs:element name="TransBillNo" type="xs:string" minOccurs="0" />
+              <xs:element name="RTVData" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckDay" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="GSOrderId" type="xs:string" minOccurs="0" />
+              <xs:element name="ProdName" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode" type="xs:base64Binary" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
